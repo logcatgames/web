@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82171980-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82171980-9');
+</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>We make video games! | Logcat Games</title>
+    <meta name="description" content="We publish the best games on iOS and Android"/>
+    <meta name="keywords" content="Mobile games, free games, voodoo.io, lionstudios, ketchappgames, best free games, free android games, appstore, googleplay" />
+    <meta property="og:title" content="Play Free Offline Games | Free Games | Logcat Games" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: arial
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+
+        infoText {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        body {
+            background: #D94C00;
+            /*background: #D94C00;*/
+            text-align: center;
+        }
+
+        #box-item-game {
+            width: 404px;
+            text-align: center;
+            margin: 0px auto 40px;
+            padding: 0px 0px 0px 0px;
+            border-width: 1px 1px 1px 1px;
+            border-color: #e2e2e2;
+            border-style: solid;
+            background-color: #ffffff;
+        }
+
+        .article-image img {
+            width: 400px;
+        }
+
+        .article-badge {
+            text-align: center;
+        }
+
+        #box-item-game h1 {
+            font-family: unset;
+            text-align: center;
+        }
+
+        .article-badge img {
+            width: 130px;
+        }
+
+     /*   .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: red;
+           color: white;
+           text-align: center;
+        }*/
+
+        #box-text {
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+
+        .article-text {
+            width: 400px;
+            text-align: center;
+            margin: 0px auto 10px;
+            color: #fff;
+        }
+        #box-new{
+            font-size: 28px;
+            text-align: center;
+            color: #fff;
+            width: 100px;
+            height: 40px;
+            background: #de0000;
+            position: absolute !important;
+            top: 0px;
+        }
+        #image-new{
+            position: relative !important;
+        }
+
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 100px;
+            /*border-width: 30px 30px 30px 0px;*/
+          /*background-color: #ffeb3b;*/
+          background-color: black;
+          color: white;
+          text-align: center;
+          border-image: 30px 30px 30px 30px;
+        }
+
+        .buttonsBar {
+          position: fixed;
+          right:0;
+          /*bottom: -5px;*/
+          margin-top: 0px;
+          margin-right: 0px;
+          width: 100%;
+          height: 75px;
+          background-color: black;
+          color: white;
+          text-align: center;
+          /*border-radius:10px;*/
+          /*background-image: url("./imgs/facebook_circle.png");*/
+        }
+
+        .pic-container {
+          width: 100%;
+          height: 600px;
+          top: 0px;
+          margin-top: 0px;
+          overflow-x: scroll;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0wm01xw9jjNCnVY22RALN5MD-gokmPmQ",
+    authDomain: "logcatgames.firebaseapp.com",
+    databaseURL: "https://logcatgames.firebaseio.com",
+    projectId: "logcatgames",
+    storageBucket: "logcatgames.appspot.com",
+    messagingSenderId: "247969565717",
+    appId: "1:247969565717:web:02749b554a9cfe01"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+       <div class="buttonsBar">
+        <center>
+            <!-- <infoText>PLAY OUR GAMES NOW !</infoText> -->
+            <a href="https://itunes.apple.com/us/developer/id1299762752" target="_blank" alt="appstore">
+            <img src="./imgs/appstore_circle.png" style="zoom: 0.2;">
+            <a href="https://play.google.com/store/apps/dev?id=7984558733344730164" target="_blank" alt="playstore">
+            <img src="./imgs/playstore_circle.png" style="zoom: 0.2;">
+            <a href="https://www.facebook.com/logcatgames/" target="_blank" alt="facebook">
+            <img src="./imgs/facebook_circle.png" style="zoom: 0.2;">
+        </center>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <img src="./imgs/logo.png" style="zoom: 0.375"/> -->
+    <div id="box-text">
+        <infoText>PLAY OUR GAMES NOW!</infoText>
+    </div>
+<!-- 
+    <div id="box-item-game">
+        <div class="article-image" id="image-new">
+            
+            <a href="https://www.messenger.com/t/logcatrunner?game=logcatrunner"
+                target="_blank" alt="logcatrunner">
+                <img src="./imgs/logcatrunner.png">
+            </a>
+
+            <div id="box-new">
+                <h3>NEW</h3>    
+            </div>
+        </div>
+        <h1> Logcat Runner </h1>
+        <div class="article-badge">
+            <a href="https://www.messenger.com/t/logcatrunner?game=logcatrunner"
+                target="_blank" alt="logcatrunner">
+                <img src="./imgs/instantgames.png">
+            </a>
+
+        </div>
+    </div> -->
+    <!-- <iframe src="http://logcatgames.com/play/index.html" height="250" width="50%" style="border:1px solid white;"></iframe> -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+      <div class="pic-container">
+    <a href="https://play.google.com/store/apps/details?id=com.logcat.fruitninjafree.ninjaslice.ageofwar.zombietsunami.zombieslice"><img src="./imgs/ninjaslice.png" /></a>
+    <a href="writeB.html"><img src="./imgs/ninjaslice.png" /></a>
+    <a href="writeC.html"><img src="./imgs/ninjaslice.png" /></a>
+    <a href="writeD.html"><img src="./imgs/ninjaslice.png" /></a>
+    <a href="writeE.html"><img src="./imgs/ninjaslice.png" /></a>
+  </div>
+    
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.fruitninjafree.ninjaslice.ageofwar.zombietsunami.zombieslice"
+                target="_blank" alt="zombieslice">
+                <img src="./imgs/ninjaslice.png">
+            </a>
+        </div>
+        <h1> Ninja Slice Zombie : Zombie Cut Master </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.fruitninjafree.ninjaslice.ageofwar.zombietsunami.zombieslice"
+                target="_blank" alt="zombieslice">
+                <img src="./imgs/playstore.png">
+            </a>
+
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.pineapplepen" target="_blank" alt="ApplePineapplePen">
+                <img src="./imgs/pineapplepen.png">
+            </a>
+        </div>
+        <h1> Apple Pineapple Pen </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.pineapplepen" target="_blank" alt="ApplePineapplePen">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.trianglesquarecircle" target="_blank" alt="RhythmShape">
+                <img src="./imgs/rhythmshape.png">
+            </a>
+        </div>
+        <h1> Rhythm Shape - Perfect Beat </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.trianglesquarecircle" target="_blank" alt="RhythmShape">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.mtp" target="_blank" alt="MathFriends">
+                <img src="./imgs/mathfriends.png">
+            </a>
+        </div>
+        <h1> Math Friends </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.mtp" target="_blank" alt="MathFriends">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.jewelsbananaskong" target="_blank" alt="JewelBlitz">
+                <img src="./imgs/jewel.png">
+            </a>
+        </div>
+        <h1> Jewel Blitz </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.jewelsbananaskong" target="_blank" alt="JewelBlitz">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.kongloveballs.droptheball" target="_blank"
+                alt="Where'sMyBall">
+                <img src="./imgs/droptheball.png">
+            </a>
+        </div>
+        <h1> Where's My Ball </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.kongloveballs.droptheball" target="_blank"
+                alt="Where'sMyBall">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.stack3d" target="_blank" alt="Stack3D">
+                <img src="./imgs/stack3d.png">
+            </a>
+        </div>
+        <h1> Stack 3D </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.stack3d" target="_blank" alt="Stack3D">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div id="box-item-game">
+        <div class="article-image">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.impossiblepet" target="_blank" alt="ImpossiblePet">
+                <img src="./imgs/impossiblepet.png">
+            </a>
+        </div>
+        <h1> Impossible Pet </h1>
+        <div class="article-badge">
+            <a href="https://play.google.com/store/apps/details?id=com.logcat.impossiblepet" target="_blank" alt="ImpossiblePet">
+                <img src="./imgs/playstore.png">
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">JOIN US
+        <left>
+            <!-- <infoText>PLAY OUR GAMES NOW !</infoText> -->
+            <a href="https://itunes.apple.com/us/developer/id1299762752" target="_blank" alt="appstore">
+            <img src="./imgs/appstore_circle.png" style="zoom: 0.2;">
+            <a href="https://play.google.com/store/apps/dev?id=7984558733344730164" target="_blank" alt="playstore">
+            <img src="./imgs/playstore_circle.png" style="zoom: 0.2;">
+            <a href="https://www.facebook.com/logcatgames/" target="_blank" alt="facebook">
+            <img src="./imgs/facebook_circle.png" style="zoom: 0.2;">
+        </left>
+    </div>
+</body>
+
+</html>
